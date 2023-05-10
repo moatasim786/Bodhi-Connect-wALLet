@@ -1,7 +1,8 @@
 import { ThirdwebProvider } from '@thirdweb-dev/react';
-import GithubTriangle from '../components/GithubTriangle';
 import Head from 'next/head';
 import '../styles/globals.css';
+import Web3 from 'web3';
+
 
 // This is the chainId your dApp will work on.
 const activeChain = 'goerli';
@@ -18,7 +19,6 @@ function MyApp({ Component, pageProps }) {
 				/>
 			</Head>
 			<Component {...pageProps} />
-			<GithubTriangle />
 		</ThirdwebProvider>
 	);
 }
